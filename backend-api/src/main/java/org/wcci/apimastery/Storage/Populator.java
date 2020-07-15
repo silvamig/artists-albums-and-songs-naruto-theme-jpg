@@ -24,10 +24,10 @@ public class Populator implements CommandLineRunner {
 
     @Override
     public void run(String...args) throws Exception {
-        Artist artist1= new Artist("Asian Kung-Fu Generation", "Naruto Artist", "Kioon Record Label", "./artists-albums-and-songs-naruto-theme-jpg/frontend-spa/src/images/naruto-artist.jpg");
-        Artist artist2= new Artist("Yoko Kono", "Composer for the Cowboy Bebop Soundtrack", "Victor Entertainment", "./artists-albums-and-songs-naruto-theme-jpg/frontend-spa/src/images/cowboy-artist.jpg");
-        Artist artist3= new Artist("Mika Nakashima", "Singer for Kiss Of Death, Darling in the Franxx OP", "Sony Music Entertainment", "./artists-albums-and-songs-naruto-theme-jpg/frontend-spa/src/images/darling-artist.jpg");
-        Artist artist4= new Artist("Nightmare", "Band for the DeathNote OP", "Nippon Crown","./artists-albums-and-songs-naruto-theme-jpg/frontend-spa/src/images/deathnote-artist.jpg");
+        Artist artist1= new Artist("Asian Kung-Fu Generation", "Naruto Artist", "Kioon Record Label", "src/images/naruto-artist.jpg");
+        Artist artist2= new Artist("Yoko Kono", "Composer for the Cowboy Bebop Soundtrack", "Victor Entertainment", "src/images/cowboy-artist.jpg");
+        Artist artist3= new Artist("Mika Nakashima", "Singer for Kiss Of Death, Darling in the Franxx OP", "Sony Music Entertainment", "src/images/darling-artist.jpg");
+        Artist artist4= new Artist("Nightmare", "Band for the DeathNote OP", "Nippon Crown","src/images/deathnote-artist.jpg");
         artistStorage.save(artist1);
         artistStorage.save(artist2);
         artistStorage.save(artist3);
