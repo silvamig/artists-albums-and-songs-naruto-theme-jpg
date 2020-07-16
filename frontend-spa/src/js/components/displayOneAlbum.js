@@ -10,16 +10,27 @@ const displayOneAlbum = (container, album) =>{
     clearElementChildren (container);
     const artistInfo = document.createElement( "section");
     artistInfo.classList.add("artist-info");
-    artist.albums.songs.forEach((song) =>{
-        artistInfo.innerHTML = `
-        <h1>${album.title}<h1>`
-    })
-    
+  
     const ol = document.createElement ("ol");
     ol.classList.add("song-ol");
-    ol.innerHTML = `
-    <li> ${song.name}</li>`
-    artistInfo.appendChild(ol);
+   ol.innerHTML = `<li>I work</li>`
+   
+   console.log(album.songs)   //potentially an issue with our populator and song pojo. No songs to list. 
+
+    album.songs.forEach((song) =>{ 
+      const li = document.createElement("li");
+      li.innerHTML = `<p>I work </p>`
+      console.log(li)
+      ol.appendChild(li);
+
+        
+        
+  
+    })
+    
+    artistInfo.append(ol);
+    
+    //artistInfo.appendChild(ol);
     container.appendChild(artistInfo);
 
    }
