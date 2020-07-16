@@ -28,13 +28,12 @@ const displayAllArtists = (milesUl, artists) => {
     // Since we aren't inside an innerHTML tag, we don't need the ${} to get information from our JSON object.
     img.classList.add('artist-art'); //we give our image its class name so that our CSS remembers the formatting.
     liSection.append(img); //we add our newly created image into our <li> tag.
-
-    milesUl.append(liSection); //we add our <li> tag to our <ul> tag.
-
     liSection.addEventListener('click', () => { //instead of an <a> tag which link us to a new page, we add an event listener, which calls the function which will generate the page content. 
       alert("you clicked "+ artists[i].name) //this is just to confirm the eventListener works proper
       displayOneArtist(allArtistsContainer, artists[i]) //this calls a function at the bottom of this document which I did not comment as thoroughly. 
     });
+
+    milesUl.append(liSection); //we add our <li> tag to our <ul> tag.
 
   };
   };
@@ -65,7 +64,7 @@ fetchArtists() //we call our api.
 
 //when we actually make this for real this should prolly get put in a different javascript file I'm just really bad with imports and exports~~~
 
-const displayOneArtist = (container,artist) =>{ //this is really just the same thing over again. Importantly: you can't append things elements created by the 'innerHTMl' method.
+const displayOneArtist = (container,artist) =>{ //this is really just the same thing over again. Importantly: you can't append things to elements created by the 'innerHTMl' method.
 clearElementChildren(container);
 container.classList.remove("all-artists-container");
 container.classList.add("artist-container");
