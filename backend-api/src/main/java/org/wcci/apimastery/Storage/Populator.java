@@ -58,9 +58,9 @@ public class Populator implements CommandLineRunner {
         albumStorage.save(deathnoteAlbum);
 
         Song narutoSong = new Song(artist1, narutoAlbum, "R★O★C★K★S", "https://www.youtube.com/embed/4t__wczfpRI", "1:44");
-        Song narutoSong2= new Song(artist1, narutoAlbum, "Haruka Kanata", "https://www.youtube.com/embed/nJ6A6GC_ki4", "1:40");
+        Song narutoSong2= new Song(artist1, narutoAlbum, "Haruka Kanata", "https://www.youtube.com/embed/SRn99oN1p_c", "1:40");
         Song narutoSong3= new Song(artist1, narutoAlbum, "Turning Saddness Into Kindness", "https://www.youtube.com/embed/9TOWvpAhu4g", "4:06");
-        Song narutoSong4= new Song(artist1, narutoAlbum, "GO!!!", "https://www.youtube.com/embed/kV5UZvsvjcM", "3:56");
+        Song narutoSong4= new Song(artist1, narutoAlbum, "GO!!!", "https://www.youtube.com/embed/xjBTNbEXbAA", "3:56");
         Song cowboySong= new Song(artist2, cowboyAlbum, "Tank!","https://www.youtube.com/embed/n2rVnRwW0h8", "3:31");
         Song cowboySong2= new Song(artist2, cowboyAlbum, "Rush", "https://www.youtube.com/embed/l8wWa3O9cUo", "3:34");
         Song cowboySong3= new Song(artist2, cowboyAlbum, "Spokey Dokey", "https://www.youtube.com/embed/MduJjbcLSqE", "3:34");
@@ -69,7 +69,7 @@ public class Populator implements CommandLineRunner {
         Song darlingSong2 = new Song(artist3, darlingAlbum, "Beautiful World", "https://www.youtube.com/embed/QTCgYNzM7k4","4:19");
         Song darlingSong3= new Song(artist3, darlingAlbum,"Manatsu no Setsuna", "https://www.youtube.com/embed/1wggz0-xOsw", "3:42");
         Song darlingSong4= new Song(artist3, darlingAlbum,"Torikago", "https://www.youtube.com/embed/VD_JhspDBIg", "3:39");
-        Song deathnoteSong= new Song(artist4, deathnoteAlbum,"The WORLD", "https://www.youtube.com/embed/btD61Bq0XJo", "3:37");
+        Song deathnoteSong= new Song(artist4, deathnoteAlbum,"The WORLD", "https://www.youtube.com/embed/8QE9cmfxx4s", "3:37");
         Song deathnoteSong2= new Song(artist4, deathnoteAlbum,"Incident(Jiken)", "https://www.youtube.com/embed/iYJbUSWRWeU", "3:11");
         Song deathnoteSong3= new Song(artist4, deathnoteAlbum,"Lights Theme", "https://www.youtube.com/embed/E3LeZNlI0Xg", "3:15");
         Song deathnoteSong4= new Song(artist4, deathnoteAlbum,"L's Theme A,B, & C", "https://www.youtube.com/embed/tfvX4Py15Es", "8:08");
